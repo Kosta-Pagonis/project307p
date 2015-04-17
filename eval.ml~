@@ -14,7 +14,6 @@ let rec eval_expr expr ps env store = match expr with
       let r1 = eval_expr e1 ps env store in
       let r2 = eval_expr e2 ps env store in
       r1 + r2
-
   | Sub (e1, e2) ->
       let r1 = eval_expr e1 ps env store in
       let r2 = eval_expr e2 ps env store in
@@ -27,9 +26,6 @@ let rec eval_expr expr ps env store = match expr with
       let r1 = eval_expr e1 ps env store in
       let r2 = eval_expr e2 ps env store in
       r1 / r2
-  | Neg (e1) ->
-      let r1 = eval_expr e1 ps env store in
-      -r1
   | IntConst i -> i
 (* TODO: add more *)
 ;;

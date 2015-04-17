@@ -1994,7 +1994,12 @@ let
         ( EOF )
 # 1996 "Lexer.ml"
 
+<<<<<<< HEAD
   | __ocaml_lex_state -> lexbuf.Lexing.refill_buff lexbuf; __ocaml_lex_token_rec lexbuf __ocaml_lex_state
+=======
+  | __ocaml_lex_state -> lexbuf.Lexing.refill_buff lexbuf; 
+      __ocaml_lex_token_rec lexbuf __ocaml_lex_state
+>>>>>>> origin/master
 
 ;;
 
