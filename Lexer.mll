@@ -5,6 +5,10 @@ open Parser;;
 rule token = parse
   | '/''/'[^'\n']* { token lexbuf }
   | [' ' '\t' '\n'] { token lexbuf }
+<<<<<<< HEAD
+=======
+  | "++"   { PLUSPLUS }
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028
   | '+'   { PLUS }
   | '-'   { MINUS }
   | '*'   { STAR }
@@ -46,4 +50,8 @@ rule token = parse
   | (['1'-'9']['0'-'9']*|'0') as num { NUM (int_of_string num) }
   | ['_' 'a'-'z' 'A'-'Z']['_' 'a'-'z' 'A'-'Z' '0'-'9']* as s { ID s }
   | '"'([^'"']*)'"' as s { STRING (String.sub s 1 (String.length s - 2)) }
+<<<<<<< HEAD
   | eof { EOF }
+=======
+  | eof { EOF }
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028

@@ -4,4 +4,8 @@ if (true)
 if (false)
   print_int(5);
 else
+<<<<<<< HEAD
   print_str("world\n");
+=======
+  print_str("world");
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028

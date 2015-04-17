@@ -4,5 +4,11 @@ int b;
 a = 2+2;
 b = a*3;
 
+<<<<<<< HEAD
 print_int(b);
 
+=======
+print_int(a);
+print_str("\n");
+print_int(b);
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028

@@ -98,7 +98,11 @@ stmt:   | SEMI                             { Empty }
         | IF LPAR cond RPAR stmt ELSE stmt { IfThenElse ($3, $5, $7) }
         | SWITCH LPAR exp RPAR LBRACE cases RBRACE { let (cases, def) = $6 in Switch ($3, cases, def) }
         | WHILE LPAR cond RPAR stmt        { While ($3, $5) }
+<<<<<<< HEAD
         | FOR LPAR stmt SEMI cond SEMI stmt RPAR stmt { For ($3, $5, $7, $9) }
+=======
+        | FOR LPAR stmt cond SEMI stmt RPAR stmt { For ($3, $4, $6, $8) }
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028
         | BREAK SEMI                       { Break }
         | CONTINUE SEMI                    { Continue }
         | PRINTSTR LPAR STRING RPAR SEMI   { PrintStr $3 }

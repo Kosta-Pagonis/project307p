@@ -1,4 +1,8 @@
 int a;
+<<<<<<< HEAD
+=======
+int b;
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028
 
 a = 5;
 
@@ -9,4 +13,13 @@ if (a < 3) {
 }
 
 print_int(a);
+<<<<<<< HEAD
 
+=======
+print_str("\n");
+
+if (!(a < 2) && a == 6)
+  b = a + 2;
+
+print_int(b);
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028

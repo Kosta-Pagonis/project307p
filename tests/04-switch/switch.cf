@@ -2,16 +2,25 @@ int a;
 
 a = 5;
 
+<<<<<<< HEAD
 switch (a) {
+=======
+switch (a-1) {
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028
   case 1:
     print_int(999);
   case 2:
     print_int(2);
+<<<<<<< HEAD
   case 5:
     print_str("hello ");
   case 6:
     // fallthrough
     print_str("world\n");
+=======
+  case 4:
+    print_str("hello world");
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028
   default:
     print_str("nope");
 }

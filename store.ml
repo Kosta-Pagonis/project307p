@@ -24,4 +24,8 @@ type location = int;;
 module IntMap = Map.Make(struct type t = int let compare = compare end);;
 type store = int IntMap.t;;
 let value_at store loc = IntMap.find loc store;;
+<<<<<<< HEAD
 let insert_value store loc v = IntMap.add loc v store;;
+=======
+let insert_value store loc v =  IntMap.add loc v store;;
+>>>>>>> d68aeae57ff6fd3d10adab4bd85b031b409a0028
