@@ -1,0 +1,18 @@
+int a;
+
+a = 5;
+
+switch (a) {
+  case 1:
+    print_int(999);
+  case 2:
+    print_int(2);
+  case 5:
+    print_str("hello ");
+  case 6:
+    // fallthrough
+    print_str("world\n");
+  default:
+    print_str("nope");
+}
+

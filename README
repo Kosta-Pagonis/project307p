@@ -1,0 +1,58 @@
+For your course project, you will create an interpreter for the C-flat programming language.
+
+Files included:
+
+- Parser.mly, Lexer.mll: they convert a file to an AST. Use them (the code to
+  use them is already in run.ml), but don't modify them. They parse C-flat files
+  but they do not typecheck them so I suggest you use them with the test files
+  given to you (only 1 so far, but more to come, one for each feature that you
+  are required to implement).
+  DO NOT CHANGE THIS FILE
+
+- ast.ml: defines the AST.  
+  DO NOT CHANGE THIS FILE
+
+- store.ml: emulates physical memory. use the two get/set functions provided.
+  DO NOT CHANGE THIS FILE.
+
+- env.ml: constructs the initial environment from the declarations,
+  and provides functions to look up the environment.
+  DO NOT CHANGE THIS FILE.
+
+- eval.ml: contains the interpreter. Almost all of your code is in this file.
+
+- main.ml: contains the environment type and the logic for the interpretation.
+  DO NOT CHANGE THIS FILE.
+
+You should only modify eval.ml.
+
+Use the makefile to compile the project (run "make all"), then run
+"./main simple.cf". More test files will be published soon.
+
+You will be penalized in grading if we can't interpret a file "file.cf" by
+doing "make all && ./main file.cf" so don't change that. Ideally, for each
+input file provided, the output of your interpreter should match the output
+file provided.
+
+Tentative grading for features:
+
+Basic features: gets you up to 90% of project grade
+Expr eval and assignment: 35
+if, switch: 15
+for, while: 10
+pre-post: 5
+functions: 10
+ptrs: 7
+arrays: 8
+
+Advanced features: gets you up to 125%
+recursion: 18
+break, continue: 7
+nested ptrs, mixing of pointers and arrays: 10
+
+Look into the tests directory for samples of each feature. Although we will
+strive to test each feature independently, this is not a guarantee, so make
+sure you get the basics correct (at least up to 06) or some test cases for
+advanced features might not work.
+
+You will work on this project in groups of 2 to 3. 
